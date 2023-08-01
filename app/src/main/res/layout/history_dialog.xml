@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rela"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp"
+    android:layout_above="@+id/history_rela">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/corner">
+
+        <ImageView
+            android:id="@+id/bottom_history_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bottom_history_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/bottom_history_img"
+            android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
